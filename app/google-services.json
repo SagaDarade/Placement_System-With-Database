@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "766401229014",
+    "firebase_url": "https://placement-system-deddd.firebaseio.com",
+    "project_id": "placement-system-deddd",
+    "storage_bucket": "placement-system-deddd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766401229014:android:500b5802b3bdfde9df9977",
+        "android_client_info": {
+          "package_name": "com.example.PlaceSystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "766401229014-p1jlju38o0mq58bpsdqp40kdqr90erlu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgqZN0eu4R9mm2JdcetSJu6a4bSvYaKfo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "766401229014-p1jlju38o0mq58bpsdqp40kdqr90erlu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

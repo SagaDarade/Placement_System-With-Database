@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <gradient
+        android:useLevel="true"
+        android:startColor="#667eea"
+        android:endColor="#fad0c4"
+        android:centerX="@android:integer/status_bar_notification_info_maxnum"
+        android:angle="90"/>
+
+</shape>

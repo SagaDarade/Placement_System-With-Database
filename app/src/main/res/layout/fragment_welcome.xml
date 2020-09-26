@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/instruction"
+    tools:context=".MainActivity"
+    android:duration="@android:integer/config_longAnimTime"
+    android:fromYDelta="100%p"
+    android:toYDelta="0%p"
+    >
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="INSTRUCTION / सूचना"
+        android:layout_marginLeft="30dp"
+        android:textColor="#FF0000"
+        android:textSize="30dp"
+        android:layout_marginTop="60dp"
+        android:textStyle="bold"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:text="
+       ---> Student Profile System (SPS) ची वैशिष्ट्ये
+विद्यार्थ्यांने या प्रणाली मध्ये एकदाच प्रोफाइल बनवायचे आहे.
+एकदा प्रोफाइल बनवले की तो
+प्लेसमेंट चे विविध ऑनलाइन ऍप्लिकेशनमध्ये हीच प्रोफाइल वापरण्यास सक्षम असेल.
+Account बनवताना  मोबाइल नंबर डुप्लिकेट नसावेत.
+एका विद्यार्थ्याचे केवळ एकच Account असावे."
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginTop="130dp"
+       android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:textColor="#FF0000"
+        android:text="
+       ---> आपल्या प्रोफाइलमधील माहितीच्या आधारावर आपल्याला प्लेसमेंट फॉर्म उपलब्ध करून दिला जाईल, म्हणून कृपया प्रोफाइलमध्ये अचूक माहिती प्रदान करा."
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="360dp"
+        />
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:text="
+       ---> Admin चे लॉगिन आणि संकेतशब्द विद्यार्थी वापर करु शकत नाही."
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#0000FF"
+        android:layout_marginTop="480dp"
+
+        />
+
+    <LinearLayout
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="580dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:id="@+id/bn_stud"
+            android:layout_weight="1"
+            android:text="STUDENT PROFILE"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:id="@+id/bn_admin"
+            android:layout_weight="1"
+            android:text="ADMIN"
+            />
+    </LinearLayout>
+</FrameLayout>

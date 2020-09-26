@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Student_Info_Show">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/label_agent"
+            android:text="STUDENT DATA"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/sa"
+            android:gravity="center_horizontal" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/colorView"
+        android:layout_below="@id/label_agent"
+        android:id="@+id/view1"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:id="@+id/scroll1"
+            android:background="#602B608A"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_rno"
+                    android:text="Student ID"
+                    android:textSize="15dp"
+                    android:layout_marginTop="25dp"/>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ed_rno"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="5dp"
+                    android:enabled="false"
+                    android:textColor="@color/Roomtext"
+                    android:layout_below="@+id/spin"
+                    tools:ignore="UnknownId" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/colorView"
+                    android:layout_below="@id/ed_rno"
+                    android:id="@+id/view2"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_cName"
+                    android:text="Name"
+                    android:textSize="18dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@id/view2"/>
+
+                <EditText
+                    android:id="@+id/ed_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_cName"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="-31dp"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/Roomtext"
+                    android:enabled="false"
+                     />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorView"
+                    android:layout_below="@id/tv_cName"
+                    android:id="@+id/view23"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_cAddr"
+                    android:text="Address"
+                    android:textSize="18dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@id/ed_name"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ed_addrs"
+                    android:layout_marginLeft="150dp"
+                    android:layout_below="@id/tv_cAddr"
+                    android:enabled="false"
+                    android:textColor="@color/Roomtext"
+                    android:layout_marginTop="-31dp"
+                    android:drawablePadding="10dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorView"
+                    android:layout_below="@id/tv_cAddr"
+                    android:id="@+id/view24"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_cBdate"
+                    android:text="BirthDate"
+                    android:textSize="18dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@id/ed_addrs"/>
+
+                <EditText
+                    android:id="@+id/ed_birth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_cBdate"
+                    android:textColor="@color/Roomtext"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="-31dp"
+                    android:drawablePadding="10dp"
+                    android:enabled="false"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorView"
+                    android:layout_below="@id/tv_cBdate"
+                    android:id="@+id/view25"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_cCont1"
+                    android:text="Contact 1"
+                    android:textSize="18dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@id/ed_birth"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:textColor="@color/Roomtext"
+                    android:id="@+id/ed_contact"
+                    android:layout_marginLeft="150dp"
+                    android:layout_below="@id/tv_cCont1"
+                    android:layout_marginTop="-31dp"
+                    android:drawablePadding="10dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorView"
+                    android:layout_below="@id/tv_cCont1"
+                    android:id="@+id/view26"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_cCont2"
+                    android:text="Contact 2"
+                    android:textSize="18dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@id/ed_contact"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ed_contact2"
+                    android:enabled="false"
+                    android:textColor="@color/Roomtext"
+                    android:layout_below="@id/tv_cCont2"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="-31dp"
+                    android:drawablePadding="10dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorView"
+                    android:layout_below="@id/tv_cCont2"
+                    android:id="@+id/view27"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_cEmail"
+                    android:text="Gender"
+                    android:textSize="18dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@id/ed_contact2"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:id="@+id/ed_email"
+                    android:layout_below="@id/tv_cEmail"
+                    android:layout_marginTop="-31dp"
+                    android:layout_marginLeft="150dp"
+                    android:textColor="@color/Roomtext"
+                    android:drawablePadding="10dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorView"
+                    android:layout_below="@id/tv_cEmail"
+                    android:id="@+id/view28"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_cAdhar"
+                    android:text="Hsc %"
+                    android:textSize="18dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@id/ed_email"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:id="@+id/ed_adhaarCard"
+                    android:layout_below="@id/tv_cAdhar"
+                    android:textColor="@color/Roomtext"
+                    android:layout_marginTop="-31dp"
+                    android:layout_marginLeft="150dp"
+                    android:drawablePadding="10dp"
+                    android:maxLength="12"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorView"
+                    android:layout_below="@id/tv_cAdhar"
+                    android:id="@+id/view29"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_cPAN"
+                    android:text="Ssc %"
+                    android:textSize="18dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@id/ed_adhaarCard"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ed_PANCard"
+                    android:layout_below="@id/tv_cPAN"
+                    android:enabled="false"
+                    android:layout_marginTop="-31dp"
+                    android:textColor="@color/Roomtext"
+                    android:layout_marginLeft="150dp"
+                    android:drawablePadding="10dp"
+                    android:maxLength="12"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorView"
+                    android:layout_below="@id/tv_cPAN"
+                    android:id="@+id/view30"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_cJoin"
+                    android:text="Graduation %"
+                    android:textSize="18dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@id/ed_PANCard"/>
+
+                <EditText
+                    android:id="@+id/ed_initDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_cJoin"
+                    android:layout_marginLeft="150dp"
+                    android:textColor="@color/Roomtext"
+                    android:layout_marginTop="-29dp"
+                    android:enabled="false"
+                    android:drawablePadding="10dp"
+                     />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorView"
+                    android:layout_below="@id/tv_cJoin"
+                    android:id="@+id/view31"/>
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_cLeave"
+                    android:text="POST Gradution %"
+                    android:textSize="18dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@id/ed_initDate"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ed_endDate"
+                    android:layout_marginTop="-31dp"
+                    android:enabled="false"
+                    android:layout_marginLeft="150dp"
+                    android:layout_below="@id/tv_cLeave"
+                    android:textColor="@color/Roomtext"
+                    android:drawablePadding="10dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorView"
+                    android:layout_below="@id/tv_cLeave"
+                    android:id="@+id/view32"/>
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_cCompny"
+                    android:text="Compny Name "
+                    android:textSize="18dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@id/view32"/>
+
+                <EditText
+                    android:id="@+id/ed_comp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view32"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="-5dp"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/Roomtext" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorView"
+                    android:layout_below="@id/ed_comp"
+                    android:id="@+id/view33"/>
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_ccomJomin"
+                    android:text="Joinig Date "
+                    android:textSize="18dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@id/view33"/>
+
+                <EditText
+                    android:id="@+id/ed_compjoin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view33"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="-5dp"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/Roomtext" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorView"
+                    android:layout_below="@id/ed_compjoin"
+                    android:id="@+id/view34"/>
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_ccomTime"
+                    android:text="Time "
+                    android:textSize="18dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@id/view34"/>
+
+                <EditText
+                    android:id="@+id/ed_comptime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view34"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="-5dp"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/Roomtext" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorView"
+                    android:layout_below="@id/ed_comptime"
+                    android:id="@+id/view35"/>
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:id="@+id/btn_Asave"
+                android:layout_weight="1"
+                android:text="SAVE"
+                android:onClick="custUpdate"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:id="@+id/btn_Ashow"
+                android:layout_weight="1"
+                android:text="SHOW"
+                android:onClick="custDel"
+                tools:ignore="OnClick" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

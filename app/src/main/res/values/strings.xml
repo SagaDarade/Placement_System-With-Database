@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="pref_file">com.abc.preference</string>
+    <string name="pref_login_status">com.abc.preference_login_status</string>
+    <string name="pref_user_name">com.abc.preference_user_name</string>
+
+
+    <string name="app_name">PlaceSystem</string>
+
+    <string name="itemSpin">- SELECT -</string>
+    <string name="enter_alternative_no">Alternative Num</string>
+    <string name="enter_adhar_no">Adhaar Num</string>
+    <string name="enter_pancard_no">PAN Card No.</string>
+    <string name="enter_paiddeposite">Paid Deposit</string>
+    <string name="enter_remaining_deposite">Remaining Deposit</string>
+    <string name="deposite">Deposit</string>
+    <string name="room_id">Room No</string>
+    <string name="enter_contact_no">Contact No.</string>
+    <string name="enter_name">Enter Name</string>
+
+
+</resources>
